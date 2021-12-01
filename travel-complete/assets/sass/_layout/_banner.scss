@@ -1,0 +1,246 @@
+/*Banner Section*/
+.banner__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    &-content {
+        width: calc(100% - 520px);
+        padding-right: 30px;
+        max-width: 600px;
+        color: $light-color;
+        .title {
+            margin-bottom: 25px;
+        }
+        .txt {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .btn__grp {
+            margin-top: 30px;
+        }
+    }
+    &-area {
+        padding: 20px;
+        background: $body-bg;
+        width: 100%;
+        max-width: 520px;
+        @include border-radius(5px);
+        .title {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+    &-form {
+        .input-date-container  {
+            margin: 0;
+            @include border-radius(3px);
+            background: $section-bg;
+            border: 1px solid $border-color;
+            min-height: 80px;
+            position: relative;
+            .form-label {
+                font-family: $heading;
+                margin-bottom: 0;
+                padding: 12px 15px 0;
+                display: block;
+                margin-bottom: -5px;
+                color: $base;
+            }
+            .form-control {
+                font-size: 14px;
+                border: none;
+                outline: none;
+                color: $title;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
+                }
+            }
+            select.form--control {
+                position: absolute;
+                cursor: pointer;
+                height: 80px;
+                left: 0;
+                top: 0;
+                padding-top: 20px;
+            }
+        }
+        .cmn--btn {
+            height: 60px;
+        }
+    }
+    @include breakpoint(max-xl) {
+        @include breakpoint(lg) {
+            &-content {
+                padding-right: 20px;
+                .title {
+                    font-size: 40px;
+                    line-height: 1.3;
+                }
+                .txt {
+                    font-size: 16px;
+                }
+                .btn__grp {
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+    @include breakpoint(max-lg) {
+        &-content {
+            padding: 0 0 55px;
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            .btn__grp {
+                justify-content: center;
+            }
+        }
+        &-area {
+            max-width: 100%;
+        }
+    }
+    @include breakpoint(max-sm) {
+        &-content {
+            .title {
+                font-size: 40px;
+                line-height: 1.3;
+            }
+            .txt {
+                font-size: 16px;
+            }
+            .btn__grp {
+                margin-top: 25px;
+            }
+        }
+    }
+    @media screen and (max-width:375px) {
+        &-area {
+            padding: 15px;
+        }
+        &-content {
+            .title {
+                font-size: 32px;
+                line-height: 1.3;
+            }
+        }
+    }
+}
+.banner-section {
+    padding: 190px 0;
+    position: relative;
+    overflow: hidden;
+    .banner-slider {
+        inset: 0;
+        position: absolute;
+        .owl-height, .owl-stage, .owl-item {
+            height: 100% !important;
+        }
+        .owl-item {
+            &.active {
+                z-index: 999;
+            }
+        }
+    }
+    .banner-bg {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        animation: backgroundImg 7s linear infinite;
+        -webkit-animation: backgroundImg 7s linear infinite;
+        -moz-animation: backgroundImg 7s linear infinite;
+        &::before {
+            content: "";
+            inset: 0;
+            position: absolute;
+            background: radial-gradient(circle, rgba($title, .9) 0%, rgba($title, .5) 100%);
+            z-index: 1;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    @include breakpoint(max-xxl) {
+        padding: 140px 0;
+    }
+    @include breakpoint(max-xl) {
+        padding: 170px 0;
+    }
+    @include breakpoint(max-lg) {
+        padding: 100px 0;
+    }
+}
+@keyframes backgroundImg {
+    0% {
+        @include transform(scale(1.2))
+    } 50% {
+        @include transform(scale(1))
+    }  100% {
+        @include transform(scale(1.2))
+    } 
+}
+.ui-icon-circle-triangle-e {
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+.ui-icon-circle-triangle-w {
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    transform: rotate(-45deg);
+    cursor: pointer;
+}
+
+.owl-next {
+    right: 10px;
+}
+.owl-prev {
+    left: 10px;
+}
+.banner-slider {
+    overflow: hidden;
+    .owl-dots {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 40px;
+    }
+}
+.owl-dots {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    .owl-dot {
+        width: 15px;
+        height: 15px;
+        background: $base;
+        @include border-radius(50%);
+        @include transform(scale(.4));
+        @include transition($transition);
+        &.active {
+            @include transform(scale(1))
+        }
+    }
+}
+.owl-next, .owl-prev {
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+    color: $white;
+    font-size: 40px;
+    line-height: 1;
+    &:hover {
+        color: $base;
+    }
+    &.disabled {
+        color: rgba($color:$white, $alpha:.2);
+    }
+}

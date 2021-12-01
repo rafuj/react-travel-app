@@ -1,0 +1,42 @@
+.changeLanguage {
+  display: flex;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.changeLanguage span {
+  color: #e4405f;
+  margin-right: 2px;
+}
+
+.changeLanguage a {
+  color: #031e44;
+}
+
+.changeLanguage a:not(:last-child)::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 5px;
+  color: #031e44;
+}
+
+.changeLanguage .language {
+  height: 32px;
+  padding-left: 5px;
+  border: 1px solid rgba(3, 30, 68, 0.1);
+  border-radius: 4px;
+  margin-left: 15px;
+  outline: none;
+  background: transparent;
+  color: #031e44;
+}
+
+.changeLanguage .language option {
+  color: #031e44;
+  background: #ffffff;
+}
+
+.changeLanguage .language:focus {
+  box-shadow: none;
+}

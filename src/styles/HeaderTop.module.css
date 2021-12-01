@@ -1,0 +1,73 @@
+.headerTop {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #e5e5e5;
+  background: #f7fbff;
+}
+
+.header__top__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__top__wrapper .topMenu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.header__top__wrapper .topMenu li {
+  position: relative;
+}
+
+.header__top__wrapper .topMenu li a {
+  text-decoration: none;
+}
+
+.header__top__wrapper .topMenu li:not(:last-child) {
+  padding-right: 20px;
+}
+
+.header__top__wrapper .topMenu li:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 50%;
+  height: 14px;
+  margin-top: -7px;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header__top__wrapper .name {
+  text-transform: capitalize;
+  font-family: "Jost", sans-serif;
+}
+
+@media (max-width: 767px) {
+  .header__top__wrapper {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .header__top__wrapper ul {
+    margin: 0;
+    padding: 5px 0;
+  }
+
+  .header__top__wrapper .topMenu {
+    justify-content: center;
+  }
+  .header__top__wrapper .topMenu li {
+    padding: 0;
+  }
+}
+
+.header__top__wrapper .social-icons li a i {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}

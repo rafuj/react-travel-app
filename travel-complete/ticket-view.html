@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Travel Booking Platform</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <main class="main-body">
+
+        <div class="overlay"></div>
+        <div class="preloader">
+            <div id="preloader">
+                <img class="icon" src="./assets/images/loader.png" alt="images">
+            </div>
+        </div>
+        
+        
+        
+        <section class="dashboard-section bg--title">
+            <aside class="dashboard__sidebar">
+                <div class="sidebar-container">
+                    <div class="dashboard__logo">
+                        <a href="#0">
+                            <img src="./assets/images/logo/logo-white.png" alt="logo">
+                        </a>
+                        <span class="close-sidebar d-lg-none">
+                            <i class="las la-times"></i>
+                        </span>
+                    </div>
+                    <div class="side__menu__area">
+                        <div class="side__menu__area-inner">
+                            <div class="dashboard__author">
+                                <div class="thumb">
+                                    <a href="#0">
+                                        <img src="./assets/images/user/user.jpg" alt="user">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">
+                                        <a href="#0">John Cena</a>
+                                    </h6>
+                                    <a href="#0" class="text--base">@johncena</a>
+                                </div>
+                            </div>
+                            <ul class="side__menu">
+                                <li>
+                                    <div class="side__menu-title">
+                                        <span>Your Trip</span>
+                                        <select class="side__menu-select">
+                                            <option value="01">English</option>
+                                            <option value="01">Bangla</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Latest Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Upcoming Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Interested Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="side__menu-title">
+                                        <span>User Panel</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="dashboard.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit-preview.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit Preview</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit History</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Ticket</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="create-ticket.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Create Ticket</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ticket-view.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Ticket View</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="two-factor.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Two Factor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="change-password.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Change Password</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="side__menu__footer">
+                        <div class="side__menu__footer__inner">
+                            <button type="button" class="cmn--btn">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <article class="dashboard__article">
+                <div class="dashboard__header">
+                    <div class="dashboard__header-top">
+                        <div class="dashboard__header__bar">
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <form class="dashboard-search">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" id="search" placeholder="Search Here" name="name">
+                                <button type="submit" class="submit-btn"><i class="las la-search"></i></button>
+                            </div>
+                        </form>
+                        <ul class="dashboard__header-top-right">
+                            <li>
+                                <a href="#0">
+                                    <i class="las la-bell"></i>
+                                </a>
+                                <div class="notification__wrapper">
+                                    <ul>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--primary">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--info">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--success">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dashboard__body">
+                    <div class="container-fluid">
+                        <div class="ticket__wrapper">
+                            <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+                                <h6 class="text--white me-2">
+                                    <span class="badge badge--info mb-2">Replied</span>
+                                    <span>Ticket Id</span>
+                                    <span>#dfsadf5asdfsd</span>
+                                </h6>
+                                <a href="#0" class="cmn--btn mb-2">All Tickets</a>
+                            </div>
+                            <div class="message__chatbox__body">
+                                <form class="message__chatbox__form row">
+                                    <div class="form--group col-sm-12">
+                                        <label for="message" class="form--label-2">Your Message</label>
+                                        <textarea id="message" class="form-control form--control-2"></textarea>
+                                    </div>
+                                    <div class="form--group col-sm-12">
+                                        <div class="d-flex">
+                                            <div class="left-group col p-0">
+                                                <label for="file2" class="form--label-2">Attachments</label>
+                                                <input type="file" class="overflow-hidden form-control form--control-2 mb-2" name="file" id="file2">
+                                                <span class="info fs--14">Allowed File Extensions: .jpg, .jpeg, .png, .pdf, .doc, .docx</span>
+                                            </div>
+                                            <div class="add-area">
+                                                <label class="form--label-2 d-block">&nbsp;</label>
+                                                <button class="cmn--btn btn--sm bg--primary ms-2 ms-md-4 form--control-2" type="button"><i class="las la-plus"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form--group col-sm-12 mb-0">
+                                        <button type="submit" class="cmn--btn">Create Ticket</button>
+                                    </div>
+                                </form> 
+                            </div>
+                        </div>
+                        <div class="ticket__wrapper mt-5">
+                            <div class="message__chatbox__body">
+                                <ul class="reply-message-area">
+                                    <li>
+                                        <div class="reply-item">
+                                            <div class="name-area">
+                                                <div class="reply-thumb">
+                                                    <img src="./assets/images/user/user.jpg" alt="user">
+                                                </div>
+                                                <h6 class="title">Md Sajid Hamladar</h6>
+                                            </div>
+                                            <div class="content-area">
+                                                <span class="meta-date">
+                                                    Posted on Sunday, <span class="cl-theme">06th December 2020</span> @ <span class="cl-theme">08:44</span>
+                                                </span>
+                                                <p>
+                                                    Animi laudantium dolore quis dolor et facere itaque, suscipit recusandae eligendi! Odio, est repudiandae?
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div class="reply-item">
+                                                    <div class="name-area">
+                                                        <div class="reply-thumb">
+                                                            <img src="./assets/images/user/user.jpg" alt="user">
+                                                        </div>
+                                                        <h6 class="title">Md Sajid Hamla</h6>
+                                                    </div>
+                                                    <div class="content-area">
+                                                        <span class="meta-date">
+                                                            Posted on Sunday, <span class="cl-theme">06th December 2020</span> @ <span class="cl-theme">08:44</span>
+                                                        </span>
+                                                        <p>
+                                                            Animi laudantium dolore quis dolor et facere itaque, suscipit recusandae eligendi! Odio, est repudiandae?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div class="reply-item">
+                                            <div class="name-area">
+                                                <div class="reply-thumb">
+                                                    <img src="./assets/images/user/user.jpg" alt="user">
+                                                </div>
+                                                <h6 class="title">Md Sajid Hamladar</h6>
+                                            </div>
+                                            <div class="content-area">
+                                                <span class="meta-date">
+                                                    Posted on Sunday, <span class="cl-theme">06th December 2020</span> @ <span class="cl-theme">08:44</span>
+                                                </span>
+                                                <p>
+                                                    Animi laudantium dolore quis dolor et facere itaque, suscipit recusandae eligendi! Odio, est repudiandae?
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__footer">
+                    <div class="container-fluid text-center">
+                        <div class="copyrights">
+                            &copy; All Right Reserved by <a href="#0" class="text--base">Viserlab</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+        
+
+
+    </main>
+
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/rafcounter.min.js"></script>
+    <script src="./assets/js/lightbox.min.js"></script>
+    <script src="./assets/js/owl.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+</html>

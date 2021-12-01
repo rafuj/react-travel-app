@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Travel Booking Platform</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <main class="main-body">
+
+        <div class="overlay"></div>
+        <div class="preloader">
+            <div id="preloader">
+                <img class="icon" src="./assets/images/loader.png" alt="images">
+            </div>
+        </div>
+        
+        
+        
+        <section class="dashboard-section bg--title">
+            <aside class="dashboard__sidebar">
+                <div class="sidebar-container">
+                    <div class="dashboard__logo">
+                        <a href="#0">
+                            <img src="./assets/images/logo/logo-white.png" alt="logo">
+                        </a>
+                        <span class="close-sidebar d-lg-none">
+                            <i class="las la-times"></i>
+                        </span>
+                    </div>
+                    <div class="side__menu__area">
+                        <div class="side__menu__area-inner">
+                            <div class="dashboard__author">
+                                <div class="thumb">
+                                    <a href="#0">
+                                        <img src="./assets/images/user/user.jpg" alt="user">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">
+                                        <a href="#0">John Cena</a>
+                                    </h6>
+                                    <a href="#0" class="text--base">@johncena</a>
+                                </div>
+                            </div>
+                            <ul class="side__menu">
+                                <li>
+                                    <div class="side__menu-title">
+                                        <span>Your Trip</span>
+                                        <select class="side__menu-select">
+                                            <option value="01">English</option>
+                                            <option value="01">Bangla</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Latest Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Upcoming Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Interested Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="side__menu-title">
+                                        <span>User Panel</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="dashboard.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit-preview.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit Preview</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit History</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Ticket</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="create-ticket.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Create Ticket</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ticket-view.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Ticket View</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="two-factor.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Two Factor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="change-password.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Change Password</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="side__menu__footer">
+                        <div class="side__menu__footer__inner">
+                            <button type="button" class="cmn--btn">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <article class="dashboard__article">
+                <div class="dashboard__header">
+                    <div class="dashboard__header-top">
+                        <div class="dashboard__header__bar">
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <form class="dashboard-search">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" id="search" placeholder="Search Here" name="name">
+                                <button type="submit" class="submit-btn"><i class="las la-search"></i></button>
+                            </div>
+                        </form>
+                        <ul class="dashboard__header-top-right">
+                            <li>
+                                <a href="#0">
+                                    <i class="las la-bell"></i>
+                                </a>
+                                <div class="notification__wrapper">
+                                    <ul>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--primary">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--info">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--success">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dashboard__body">
+                    <div class="container-fluid">
+                        <div class="ticket__wrapper">
+                            <div class="profile-wrapper">
+                                <div class="profile-user mb-xl-0">
+                                    <div class="thumb">
+                                        <img src="./assets/images/user/user.jpg" alt="user">
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="title">Name: Demo</h6>
+                                        <span class="subtitle">Username: username</span>
+
+                                        <div class="mt-4">
+                                            <label class="btn btn--primary" for="profile-image">Update Profile Picture</label>
+                                            <input type="file" class="form-control form--control-2" id="profile-image" hidden>
+                                        </div>
+                                    </div>
+                                    <div class="remove-image">
+                                        <i class="las la-times"></i>
+                                    </div>
+                                </div>
+                                <div class="profile-form-area">
+                                    <form class="profile-edit-form row mb--25">
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="first-name">First Name</label>
+                                            <input type="text" class="form-control form--control-2" id="first-name" value="Demo">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="last-name">Last Name</label>
+                                            <input type="text" class="form-control form--control-2" id="last-name" value="User">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="email">Your Email</label>
+                                            <input type="text" class="form-control form--control-2" id="email" value="demo@kitkat.com">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="mobile">Mobile</label>
+                                            <input type="text" class="form-control form--control-2" id="mobile" value="+8803749292930">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="country">Your Country Name</label>
+                                            <input type="text" class="form-control form--control-2" id="country" value="Bangladesh">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="city">City</label>
+                                            <input type="text" class="form-control form--control-2" id="city" value="Dhaka">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="address">Address</label>
+                                            <input type="text" class="form-control form--control-2" id="address" value="Uttara, Dhaka">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="city">City</label>
+                                            <input type="text" class="form-control form--control-2" id="city" value="Dhaka">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="address">Address</label>
+                                            <input type="text" class="form-control form--control-2" id="address" value="Uttara, Dhaka">
+                                        </div>
+                                        <div class="form--group col-md-6">
+                                            <label class="form--label-2" for="state">State</label>
+                                            <input type="text" class="form-control form--control-2" id="state" value="Dhaka">
+                                        </div>
+                                        <div class="form--group w-100 col-md-6 mb-0 text-end">
+                                            <button type="submit" class="cmn--btn">Update Profile</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__footer">
+                    <div class="container-fluid text-center">
+                        <div class="copyrights">
+                            &copy; All Right Reserved by <a href="#0" class="text--base">Viserlab</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+    </main>
+
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/rafcounter.min.js"></script>
+    <script src="./assets/js/lightbox.min.js"></script>
+    <script src="./assets/js/owl.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+    <script>
+        "use strict"
+        var prevImg = $('.profile-user .thumb').html();
+        function proPicURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var preview = $('.profile-user').find('.thumb');
+                    preview.html(`<img src="${e.target.result}" alt="user">`);
+                    preview.addClass('has-image');
+                    preview.hide();
+                    preview.fadeIn(650);
+                    $(".remove-image").show();
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#profile-image").on('change', function() {
+            proPicURL(this);
+        });
+        $(".remove-image").on('click', function(){
+            $(".profile-user .thumb").html(prevImg);
+            $(".profile-user .thumb").removeClass('has-image');
+            $(this).hide();
+        })
+    </script>
+
+
+</body>
+</html>

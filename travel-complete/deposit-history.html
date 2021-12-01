@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Travel Booking Platform</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <main class="main-body">
+
+        <div class="overlay"></div>
+        <div class="preloader">
+            <div id="preloader">
+                <img class="icon" src="./assets/images/loader.png" alt="images">
+            </div>
+        </div>
+        
+        
+        
+        <section class="dashboard-section bg--title">
+            <aside class="dashboard__sidebar">
+                <div class="sidebar-container">
+                    <div class="dashboard__logo">
+                        <a href="#0">
+                            <img src="./assets/images/logo/logo-white.png" alt="logo">
+                        </a>
+                        <span class="close-sidebar d-lg-none">
+                            <i class="las la-times"></i>
+                        </span>
+                    </div>
+                    <div class="side__menu__area">
+                        <div class="side__menu__area-inner">
+                            <div class="dashboard__author">
+                                <div class="thumb">
+                                    <a href="#0">
+                                        <img src="./assets/images/user/user.jpg" alt="user">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">
+                                        <a href="#0">John Cena</a>
+                                    </h6>
+                                    <a href="#0" class="text--base">@johncena</a>
+                                </div>
+                            </div>
+                            <ul class="side__menu">
+                                <li>
+                                    <div class="side__menu-title">
+                                        <span>Your Trip</span>
+                                        <select class="side__menu-select">
+                                            <option value="01">English</option>
+                                            <option value="01">Bangla</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Latest Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Upcoming Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="trip-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Interested Trip</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="side__menu-title">
+                                        <span>User Panel</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="dashboard.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Dashboard</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit-preview.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit Preview</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="deposit-history.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Deposit History</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Ticket</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="create-ticket.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Create Ticket</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="ticket-view.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Ticket View</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="two-factor.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Two Factor</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="change-password.html">
+                                        <i class="las la-suitcase"></i>
+                                        <span class="cont">Change Password</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="side__menu__footer">
+                        <div class="side__menu__footer__inner">
+                            <button type="button" class="cmn--btn">Log out</button>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <article class="dashboard__article">
+                <div class="dashboard__header">
+                    <div class="dashboard__header-top">
+                        <div class="dashboard__header__bar">
+                            <div class="header-bar d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <form class="dashboard-search">
+                            <div class="position-relative">
+                                <input type="text" class="form-control" id="search" placeholder="Search Here" name="name">
+                                <button type="submit" class="submit-btn"><i class="las la-search"></i></button>
+                            </div>
+                        </form>
+                        <ul class="dashboard__header-top-right">
+                            <li>
+                                <a href="#0">
+                                    <i class="las la-bell"></i>
+                                </a>
+                                <div class="notification__wrapper">
+                                    <ul>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--primary">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--info">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="notify__item" href="#0">
+                                                <div class="notify__thumb bg--success">
+                                                    <i class="las la-shopping-cart"></i>
+                                                </div>
+                                                <div class="notify__content">
+                                                    <h6 class="title">Awesome Hiking Trip to Amiakhum</h6>
+                                                    <span class="info">If several languages coalesce the eius minus soluta impedit inventore labore laboriosam sed odit eligendi dolores voluptatem rem quisquam, tempore ea rerum qui.</span>
+                                                    <span class="date"><i class="las la-clock"></i> 3 min ago</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dashboard__body">
+                    <div class="container-fluid">
+                        <table class="table cmn--table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Transaction ID</th>
+                                <th scope="col">Gateway</th>
+                                <th scope="col">Amount</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Time</th>
+                                <th scope="col"> MORE</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--success">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--success">
+                                                Succeed
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--primary">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--primary">
+                                                Pending
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--danger">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--danger">
+                                                Rejected
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--success">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--success">
+                                                Succeed
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--primary">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--primary">
+                                                Pending
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--danger">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--danger">
+                                                Rejected
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--success">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--success">
+                                                Succeed
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--primary">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--primary">
+                                                Pending
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--danger">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--danger">
+                                                Rejected
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--success">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--success">
+                                                Succeed
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--primary">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--primary">
+                                                Pending
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="#Trx">ONBEYX89N26P</td>
+                                    <td data-label="Gateway">RazorPay</td>
+                                    <td data-label="Amount" class="text--danger">+1111 INR</td>
+                                    <td data-label="Status">
+                                        <div>
+                                            <span class="badge badge--danger">
+                                                Rejected
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td data-label="Date">
+                                        <div>
+                                            <i class="fa fa-calendar"></i> 13 Jun, 2021 05:00 AM
+                                        </div>
+                                    </td>
+                                    <td data-label="More">
+                                        <div>
+                                            <a href="#0" class="btn btn-sm btn--info"><i class="las la-desktop"></i></a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="dashboard__footer">
+                    <div class="container-fluid text-center">
+                        <div class="copyrights">
+                            &copy; All Right Reserved by <a href="#0" class="text--base">Viserlab</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        
+
+
+    </main>
+
+
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/rafcounter.min.js"></script>
+    <script src="./assets/js/lightbox.min.js"></script>
+    <script src="./assets/js/owl.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+.cmnBtn {
+  color: #fff;
+  line-height: 24px;
+  padding: 12px 35px 9px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #e4405f;
+  border: 2px solid transparent;
+  font-size: 16px;
+  text-transform: capitalize;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  font-family: "Jost", sans-serif;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.cmnBtn:hover {
+  color: #e4405f;
+  border-color: #e4405f;
+  text-decoration: underline;
+  background: transparent;
+}
+
+button.cmnBtn {
+  border-radius: 5px;
+}
+
+.btnOutline {
+  background: transparent;
+  color: #e4405f;
+  border-color: #e4405f;
+}
+
+.btnOutline:hover {
+  background: #e4405f;
+  color: #fff;
+}
