@@ -42,3 +42,15 @@ button.cmnBtn {
   background: #e4405f;
   color: #fff;
 }
+.textBtn {
+  color: #e4405f;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  text-transform: capitalize;
+  background: transparent;
+  text-decoration: underline !important;
+}
+.textBtn:hover {
+  background: #e4405f;
+  color: #fff;
+}

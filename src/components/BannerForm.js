@@ -14,6 +14,7 @@ export default function BannerForm() {
               className={`${classes.formControl} form-control`}
               type="date"
               value="Arrival Date"
+              readOnly
             />
           </label>
         </div>
@@ -26,6 +27,7 @@ export default function BannerForm() {
               className={`${classes.formControl} form-control`}
               type="date"
               value="Departure Date"
+              readOnly
             />
           </label>
         </div>
@@ -63,6 +65,7 @@ export default function BannerForm() {
               className={`${classes.formControl} form-control`}
               type="number"
               placeholder="Guests"
+              readOnly
             />
           </label>
         </div>

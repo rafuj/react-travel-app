@@ -1,0 +1,32 @@
+import image from .section__header {
+  margin-bottom: 35px;
+  max-width: 720px;
+}
+
+.section__header__title {
+  margin-bottom: 10px;
+}
+
+.section__header__cate {
+  height: 15px;
+  width: 100%;
+  display: block;
+  max-width: 250px;
+  background-color: #e4405f;
+}
+
+.section__header__center {
+  max-width: 720px;
+}
+
+.section__header.text-center .section__header__cate {
+  mask-position: center center;
+  -webkit-mask-position: center center;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .section__header {
+    margin-bottom: 45px;
+  }
+}

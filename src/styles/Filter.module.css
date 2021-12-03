@@ -1,0 +1,31 @@
+.filterNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .filterNav {
+    margin-bottom: 45px;
+  }
+}
+
+.filterNav li {
+  padding: 0 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+  color: #031e44;
+  cursor: pointer;
+}
+
+.filterNav li.active {
+  color: #e4405f;
+  text-decoration: underline;
+}
