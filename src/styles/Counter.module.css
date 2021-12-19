@@ -10,6 +10,18 @@
   width: 25%;
   padding: 0 12px 30px;
 }
+@media screen and (max-width: 991px) {
+  .counter__item {
+    width: 50%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .counter__item {
+    width: 100%;
+  }
+}
 
 .counter__item__title {
   display: flex;

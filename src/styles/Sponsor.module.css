@@ -4,13 +4,12 @@
 }
 .sponsorItem {
   display: block;
-  padding: 0 20px;
+  padding: 5px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   max-width: 180px;
-  padding: 0 12px;
 }
 .sponsorItem img {
   width: 100%;

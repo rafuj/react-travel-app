@@ -1,9 +1,9 @@
-import React from 'react'
-
+import React from "react";
+import FooterContact from "./FooterContact";
 export default function Footer() {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <>
+      <FooterContact />
+    </>
+  );
 }
