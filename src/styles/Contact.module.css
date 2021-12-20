@@ -1,0 +1,157 @@
+.contact__area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  position: relative;
+  z-index: 5;
+}
+
+@media (min-width: 992px) {
+  .contact__area {
+    margin-bottom: -40px;
+  }
+}
+
+.contact__area .contact__content {
+  width: 100%;
+  max-width: 450px;
+  padding-right: 45px;
+}
+
+.contact__area .contact__content .contact__content-top {
+  margin-bottom: 35px;
+}
+
+.contact__area .contact__content .contact__content-top .title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contact__area .contact__content .contact__content-top p {
+  font-size: 18px;
+}
+
+.contact__area .contact__content .contact__content__botom .subtitle {
+  color: #e4405f;
+  margin-bottom: 20px;
+}
+
+.contact__area .contact__content .contact__content__botom .contact__info li {
+  display: flex;
+}
+
+.contact__area
+  .contact__content
+  .contact__content__botom
+  .contact__info
+  li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contact__area
+  .contact__content
+  .contact__content__botom
+  .contact__info
+  li
+  .icon {
+  font-size: 24px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #e4405f;
+}
+
+.contact__area
+  .contact__content
+  .contact__content__botom
+  .contact__info
+  li
+  .cont {
+  width: calc(100% - 60px);
+  padding-left: 20px;
+}
+
+.contact__area
+  .contact__content
+  .contact__content__botom
+  .contact__info
+  li
+  .cont
+  .name {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact__area
+  .contact__content
+  .contact__content__botom
+  .contact__info
+  li
+  .cont
+  a {
+  color: #e4405f;
+}
+
+.contact__area .contact__wrapper {
+  max-width: 600px;
+  padding: 50px 40px;
+  border: 1px solid rgba(228, 64, 95, 0.3);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1199px) {
+  .contact__area .contact__content {
+    max-width: 400px;
+    padding-right: 35px;
+  }
+
+  .contact__area .contact__wrapper {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact__area .contact__content,
+  .contact__area .contact__wrapper {
+    max-width: 100%;
+  }
+
+  .contact__area .contact__content {
+    margin-bottom: 45px;
+  }
+}
+
+.formControl {
+  background: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 0 15px;
+  height: 45px;
+  color: #111;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.formControl:focus {
+  box-shadow: none;
+  background: transparent;
+  color: #111;
+}
+
+textarea.formControl {
+  height: 120px;
+  padding: 15px;
+}

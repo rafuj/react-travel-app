@@ -64,7 +64,7 @@ export default function TourPackages() {
                     </div>
                   </div>
                   <div className={classes.price__tag}>
-                    <span className={`${classes.price}  text--base`}>
+                    <span className={`${classes.price} text--base`}>
                       {item.price}
                     </span>
                     <Button text="Book Now" link="/packages" />

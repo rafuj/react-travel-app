@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
 import ClientsSay from "./components/ClientsSay";
+import Contact from "./components/Contact";
 import Counter from "./components/Counter";
 import Hero from "./components/Hero";
 import Sponsor from "./components/Sponsor";
@@ -55,6 +56,15 @@ function App() {
                 <Hero pageTitle="About Us" pathName="About" />
                 <About />
                 <Counter />
+              </>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <>
+                <Contact />
+                <ClientsSay />
               </>
             }
           />
