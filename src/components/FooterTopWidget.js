@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "../styles/Footer.module.css";
 
 export default function FooterTopWidget({ title, links }) {
@@ -9,7 +10,7 @@ export default function FooterTopWidget({ title, links }) {
       <ul>
         {arr.map((value, key) => (
           <li key={key}>
-            <a href="#0">{value}</a>
+            <Link to="/">{value}</Link>
           </li>
         ))}
       </ul>

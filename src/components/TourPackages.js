@@ -1,5 +1,6 @@
 import React from "react";
 import { BsCalendarCheck, BsPeopleFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import useDestination from "../hooks/useDestination";
 import classes from "../styles/TourPackages.module.css";
 import Button from "./Button";
@@ -31,13 +32,13 @@ export default function TourPackages() {
                   <span className={`badge ${classes.badge} badge--primary`}>
                     {item.city}
                   </span>
-                  <a href="#0">
+                  <Link to="/packages">
                     <img src={item.image} alt="tour" />
-                  </a>
+                  </Link>
                 </div>
                 <div className={classes.tour__pack__content}>
                   <h5 className={classes.tour__pack__title}>
-                    <a href="#0">{item.title}</a>
+                    <Link to="/packages">{item.title}</Link>
                   </h5>
                   <p>{item.text}</p>
                   <div className={classes.dutation__grp}>
@@ -66,7 +67,7 @@ export default function TourPackages() {
                     <span className={`${classes.price}  text--base`}>
                       {item.price}
                     </span>
-                    <Button text="Book Now" link="#0" />
+                    <Button text="Book Now" link="/packages" />
                   </div>
                 </div>
               </div>

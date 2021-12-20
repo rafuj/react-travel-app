@@ -1,5 +1,6 @@
 import React from "react";
 import { BsPerson } from "react-icons/bs";
+import { Link } from "react-router-dom";
 import classes from "../styles/LanguageArea.module.css";
 export default function LanguageArea() {
   return (
@@ -8,8 +9,8 @@ export default function LanguageArea() {
         <span>
           <BsPerson />
         </span>
-        <a href="login.html">Login</a>
-        <a href="registration.html">Create Account</a>
+        <Link to="/login">Login</Link>
+        <Link to="/registration">Create Account</Link>
       </div>
       <select className={classes.language}>
         <option value="en">English</option>

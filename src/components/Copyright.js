@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "../styles/Footer.module.css";
 export default function Copyright() {
   return (
@@ -7,16 +8,16 @@ export default function Copyright() {
         <div className={classes.copyrightArea}>
           <div className={classes.copyright}>
             © All Right Reserved by{" "}
-            <a href="#0" className="text--base">
+            <Link to="/" className="text--base">
               Travelly
-            </a>
+            </Link>
           </div>
           <ul className={classes.links}>
             <li>
-              <a href="#">Terms of Service</a>
+              <Link to="/tos">Terms of Service</Link>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
           </ul>
         </div>

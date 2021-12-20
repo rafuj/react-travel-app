@@ -17,7 +17,7 @@ export default function About() {
           <div className={classes.aboutThumbTwo}>
             <img src={image} className="w-100" alt="about" />
           </div>
-          <Button text="Find Tour Plan" textBtn link="#0" />
+          <Button text="Find Tour Plan" textBtn link="/packages" />
         </div>
         <div className="col-lg-6">
           <div className={classes.discount__thumb}>

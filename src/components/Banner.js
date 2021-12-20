@@ -20,8 +20,8 @@ export default function Banner() {
               fugiat sunt nihil minima, illo laboriosam nesciunt.
             </p>
             <div className={`${classes.btn__grp} btn__grp`}>
-              <Button text="Explore Tours" link="#0" />
-              <Button outline text="About Us" link="#0" />
+              <Button text="Explore Tours" link="/about" />
+              <Button outline text="About Us" link="/about" />
             </div>
           </div>
           <div className={classes.banner__wrapper__area}>

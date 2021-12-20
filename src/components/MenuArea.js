@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { BiUserPin } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import classes from "../styles/Menu.module.css";
 import LanguageArea from "./LanguageArea";
-
 export default function MenuArea() {
   const [menu, setMenu] = useState(false);
 
@@ -23,12 +23,15 @@ export default function MenuArea() {
         </div>
         <ul className={classes.menu}>
           <li>
-            <a href="#0">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#0" className=" active">
+            <Link to="/clients">Clients</Link>
+          </li>
+          <li>
+            <Link to="/contact" className="active">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <div
@@ -38,9 +41,9 @@ export default function MenuArea() {
             <span className="me-2">
               <BiUserPin />
             </span>
-            <a href="#0" className="text--base">
+            <Link to="/dashboard" className="text--base">
               Dashboard
-            </a>
+            </Link>
           </div>
         </div>
       </div>

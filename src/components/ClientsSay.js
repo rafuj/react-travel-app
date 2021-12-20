@@ -19,7 +19,7 @@ export default function ClientsSay() {
         <div className="col-lg-6">
           {!loading && clientsSay.length > 0 && (
             <Carousel
-              infiniteLoop={false}
+              infiniteLoop
               showStatus={false}
               showArrows={false}
               autoPlay

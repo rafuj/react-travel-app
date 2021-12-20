@@ -6,7 +6,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import classes from "../styles/SocialIcons.module.css";
-
+import OpenNewLinks from "./OpenNewLinks";
 export default function SocialIcons({ notCenter }) {
   return (
     <ul
@@ -15,24 +15,24 @@ export default function SocialIcons({ notCenter }) {
       }`}
     >
       <li>
-        <a href="#0">
+        <OpenNewLinks link="https://www.facebook.com/">
           <BsFacebook />
-        </a>
+        </OpenNewLinks>
       </li>
       <li>
-        <a href="#0">
+        <OpenNewLinks link="https://www.twitter.com/">
           <BsTwitter />
-        </a>
+        </OpenNewLinks>
       </li>
       <li>
-        <a href="#0">
+        <OpenNewLinks link="https://www.instagram.com/">
           <BsInstagram />
-        </a>
+        </OpenNewLinks>
       </li>
       <li>
-        <a href="#0">
+        <OpenNewLinks link="https://www.pinterest.com/">
           <BsPinterest />
-        </a>
+        </OpenNewLinks>
       </li>
     </ul>
   );

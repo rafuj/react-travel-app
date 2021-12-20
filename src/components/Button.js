@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "../styles/Button.module.css";
 export default function Button({
   text,
@@ -21,13 +22,13 @@ export default function Button({
       {children}
     </button>
   ) : (
-    <a
-      href={link}
+    <Link
+      to={link}
       className={`${classes.cmnBtn} ${outline ? classes.btnOutline : ""} ${
         textBtn ? classes.textBtn : ""
       }`}
     >
       {text}
-    </a>
+    </Link>
   );
 }
