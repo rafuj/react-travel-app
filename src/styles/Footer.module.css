@@ -132,12 +132,12 @@
   background: #054d95 !important;
 }
 
-.footer-bottom {
+.footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.051);
 }
 
-.footer-top,
-.footer-bottom {
+.footer__top,
+.footer__bottom {
   padding: 70px 0;
 }
 
@@ -287,10 +287,8 @@
   width: 45px;
   padding: 0;
 }
-
 footer {
   position: relative;
-  /* background: url(./img/footer-bg.png) #031e44 center center; */
 }
 
 footer .scrollTop {
