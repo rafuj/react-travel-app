@@ -7,6 +7,7 @@ export default function Button({
   fullWidth,
   textBtn,
   link,
+  children,
   ...rest
 }) {
   return button ? (
@@ -17,6 +18,7 @@ export default function Button({
       } `}
     >
       {text}
+      {children}
     </button>
   ) : (
     <a
