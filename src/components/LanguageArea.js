@@ -14,8 +14,12 @@ export default function LanguageArea() {
         </span>
         {currentUser ? (
           <>
-            <Link to="/">{currentUser.displayName}</Link>
-            <span className="ms-2" onClick={logout}>
+            <Link to="/dashboard">{currentUser.displayName}</Link>
+            <span
+              className="ms-2"
+              onClick={logout}
+              style={{ cursor: "pointer" }}
+            >
               <FiLogOut />
             </span>
           </>

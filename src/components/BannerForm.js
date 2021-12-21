@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { useNavigate } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
 import useDestination from "../hooks/useDestination";
 import classes from "../styles/Banner.module.css";
 import Button from "./Button";
@@ -15,6 +17,9 @@ export default function BannerForm() {
   const [selectState, setSelectState] = useState(false);
 
   const { loading, error, dest } = useDestination();
+  const { currentUser } = useAuth();
+
+  const navigate = useNavigate();
 
   const handleClick = () => {
     selectDest === "default" ? setSelectState(true) : setSelectState(false);
@@ -25,6 +30,7 @@ export default function BannerForm() {
 
   const handleChange = (e) => {
     e.preventDefault();
+    !currentUser && navigate("/registration");
     if (selectDest !== "default" && startDate && endDate && guest) {
       const res = fetch(
         "https://travel-app-98c90-default-rtdb.asia-southeast1.firebasedatabase.app/touristRequest.json",
@@ -36,6 +42,7 @@ export default function BannerForm() {
             startDate: startDate,
             endDate: endDate,
             guest: guest,
+            name: currentUser.displayName,
           }),
         }
       );

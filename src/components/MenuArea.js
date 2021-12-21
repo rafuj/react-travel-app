@@ -46,10 +46,14 @@ export default function MenuArea() {
             </span>
             {currentUser ? (
               <>
-                <Link to="/" className="text--base">
+                <Link to="/dashboard" className="text--base">
                   {currentUser.displayName}
                 </Link>
-                <span className="ms-2" onClick={logout}>
+                <span
+                  className="ms-2"
+                  onClick={logout}
+                  style={{ cursor: "pointer" }}
+                >
                   <FiLogOut />
                 </span>
               </>
