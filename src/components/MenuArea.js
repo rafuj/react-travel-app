@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BiUserPin } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useAuth } from "../contexts/AuthContext";
 import classes from "../styles/Menu.module.css";
 import LanguageArea from "./LanguageArea";
 export default function MenuArea() {
@@ -14,6 +15,7 @@ export default function MenuArea() {
       setMenu(true);
     }
   }
+  const { currentUser } = useAuth();
 
   return (
     <>
@@ -41,9 +43,21 @@ export default function MenuArea() {
             <span className="me-2">
               <BiUserPin />
             </span>
-            <Link to="/dashboard" className="text--base">
-              Dashboard
-            </Link>
+            {currentUser ? (
+              <Link to="/" className="text--base">
+                Dashboard
+              </Link>
+            ) : (
+              <>
+                <Link className="text-white" to="/login">
+                  Login
+                </Link>
+                <span className="mx-2">/</span>
+                <Link className="text-white" to="/registration">
+                  Create Account
+                </Link>
+              </>
+            )}
           </div>
         </div>
       </div>

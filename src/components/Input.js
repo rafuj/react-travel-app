@@ -4,14 +4,14 @@ export default function Input({ className, textarea, label, ...rest }) {
   return (
     <>
       {label && (
-        <label for="name" className={classes.formLabel}>
+        <label for={label} className={classes.formLabel}>
           {label}
         </label>
       )}
       {textarea ? (
-        <textarea className={className} {...rest}></textarea>
+        <textarea className={className} id={label} {...rest}></textarea>
       ) : (
-        <input className={className} {...rest} />
+        <input className={className} id={label} {...rest} />
       )}
     </>
   );

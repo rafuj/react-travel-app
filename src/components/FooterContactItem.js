@@ -6,7 +6,7 @@ export default function FooterContactItem({ title, children }) {
     <div className={classes.footerCta__item}>
       <Link
         className={`${classes.footerCta__item__inner} text--white d-block`}
-        to="/"
+        to="/contact"
       >
         <div className={classes.icon}>{children}</div>
         <h6 className={classes.subtitle}>{title}</h6>

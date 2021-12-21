@@ -1,8 +1,7 @@
 import React from "react";
 import { FaMailBulk, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import classes from "../styles/Contact.module.css";
-import Button from "./Button";
-import Input from "./Input";
+import ContactForm from "./ContactForm";
 import Section from "./Section";
 import SectionHeader from "./SectionHeader";
 export default function Contact() {
@@ -61,62 +60,7 @@ export default function Contact() {
               txt="
                 Do not miss the current offers until the end of the Month."
             />
-            <form className={`${classes.contact__form} row`}>
-              <div className="col-sm-6">
-                <div className="form-group mb-3">
-                  <Input
-                    className={`${classes.formControl} form-control border`}
-                    type="text"
-                    label="Your Name"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="form-group mb-3">
-                  <Input
-                    className={`${classes.formControl} form-control border`}
-                    type="text"
-                    label="Your Email Address"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="form-group mb-3">
-                  <Input
-                    className={`${classes.formControl} form-control border`}
-                    type="text"
-                    label="Subject"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-6">
-                <div className="form-group mb-3">
-                  <Input
-                    className={`${classes.formControl} form-control border`}
-                    type="text"
-                    label="Your Phone"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-12">
-                <div className="form-group mb-3">
-                  <Input
-                    textarea
-                    name="message"
-                    className={`${classes.formControl} form-control border`}
-                    label="Your Message"
-                  />
-                </div>
-              </div>
-              <div className="col-sm-12">
-                <Button
-                  button
-                  text="Send Message"
-                  type="submit"
-                  className="cmnBtn"
-                />
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </div>
