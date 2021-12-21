@@ -9,7 +9,7 @@ import Select from "./Select";
 export default function BannerForm() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-  const [guest, setGuest] = useState("");
+  const [guest, setGuest] = useState(0);
   const [selectDest, setSelectDest] = useState("default");
   const [success, setSuccess] = useState(false);
   const [selectState, setSelectState] = useState(false);

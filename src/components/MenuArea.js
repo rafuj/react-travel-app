@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BiUserPin } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
+import { FiLogOut } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import classes from "../styles/Menu.module.css";
@@ -15,7 +16,7 @@ export default function MenuArea() {
       setMenu(true);
     }
   }
-  const { currentUser } = useAuth();
+  const { currentUser, logout } = useAuth();
 
   return (
     <>
@@ -44,9 +45,14 @@ export default function MenuArea() {
               <BiUserPin />
             </span>
             {currentUser ? (
-              <Link to="/" className="text--base">
-                Dashboard
-              </Link>
+              <>
+                <Link to="/" className="text--base">
+                  {currentUser.displayName}
+                </Link>
+                <span className="ms-2" onClick={logout}>
+                  <FiLogOut />
+                </span>
+              </>
             ) : (
               <>
                 <Link className="text-white" to="/login">

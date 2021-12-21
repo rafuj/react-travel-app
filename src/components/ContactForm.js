@@ -3,16 +3,22 @@ import classes from "../styles/Contact.module.css";
 import Button from "./Button";
 import Input from "./Input";
 export default function ContactForm() {
-  const [email, setEmail] = useState(null);
-  const [company, setCompany] = useState(null);
-  const [name, setName] = useState(null);
-  const [message, setMessage] = useState(null);
-  const [phone, setPhone] = useState(null);
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (name && email && company && phone && message) {
+    if (
+      name !== "" &&
+      email !== "" &&
+      company !== "" &&
+      phone !== "" &&
+      message !== ""
+    ) {
       const res = fetch(
         "https://travel-app-98c90-default-rtdb.asia-southeast1.firebasedatabase.app/userDataContacts.json",
         {

@@ -7,6 +7,8 @@ import ClientsSay from "./components/ClientsSay";
 import Contact from "./components/Contact";
 import Counter from "./components/Counter";
 import Hero from "./components/Hero";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 import Sponsor from "./components/Sponsor";
 import TopDestinations from "./components/TopDestinations";
 import TourPackages from "./components/TourPackages";
@@ -38,7 +40,7 @@ function App() {
               element={
                 <>
                   <Hero pageTitle="Login Now" pathName="Login" />
-                  <About />
+                  <Login />
                 </>
               }
             />
@@ -47,7 +49,7 @@ function App() {
               element={
                 <>
                   <Hero pageTitle="Create New Account" pathName="Create New" />
-                  <About />
+                  <SignUp />
                 </>
               }
             />
