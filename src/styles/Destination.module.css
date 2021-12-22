@@ -69,12 +69,12 @@
   font-size: 20px;
 }
 
-.destination__item .room-location {
+.room-location {
   display: block;
   margin-bottom: 10px;
 }
 
-.destination__item .room-location i {
+.room-location i {
   color: #e4405f;
 }
 
@@ -98,7 +98,7 @@
     height: 475px;
   }
 
-  .destination__item .destination__item__thumb {
+  .destination__item__thumb {
     height: 450px;
   }
 }
@@ -109,7 +109,7 @@
     width: 50% !important;
   }
 
-  .destination__item .destination__item__thumb {
+  .destination__item__thumb {
     height: 350px;
   }
 }
@@ -122,7 +122,7 @@
 }
 
 @media screen and (max-width: 450px) {
-  .destination__item .destination__item__content {
+  .destination__item__content {
     padding: 0 15px 30px;
   }
 }

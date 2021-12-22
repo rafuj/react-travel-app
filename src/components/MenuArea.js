@@ -43,6 +43,22 @@ export default function MenuArea() {
           </li>
           <li>
             <NavLink
+              to="/packages"
+              className={(navInfo) => (navInfo.isActive ? classes.active : "")}
+            >
+              Packages
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/destination"
+              className={(navInfo) => (navInfo.isActive ? classes.active : "")}
+            >
+              Destination
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/contact"
               className={(navInfo) => (navInfo.isActive ? classes.active : "")}
             >

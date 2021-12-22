@@ -1,6 +1,5 @@
 import dateFormat from "dateformat";
 import React from "react";
-import { BiTrash } from "react-icons/bi";
 import useTourRequest from "../hooks/useTourRequest";
 import tableClasses from "../styles/Table.module.css";
 import Section from "./Section";
@@ -19,7 +18,6 @@ export default function Dashboard() {
                 <th>Destination</th>
                 <th>Guest</th>
                 <th>Duration</th>
-                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -54,13 +52,6 @@ export default function Dashboard() {
                         {dateFormat(option.startDate, "paddedShortDate")} -{" "}
                         {dateFormat(option.endDate, "paddedShortDate")}
                       </span>
-                    </td>
-                    <td>
-                      <div>
-                        <span className="btn btn--danger btn-sm">
-                          <BiTrash />
-                        </span>
-                      </div>
                     </td>
                   </tr>
                 ))}

@@ -1,5 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import "./App.css";
 import About from "./components/About";
 import Banner from "./components/Banner";
@@ -16,9 +22,18 @@ import TourPackages from "./components/TourPackages";
 import { AuthProvider } from "./contexts/AuthContext";
 import "./firebase";
 import Layout from "./Layout";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <AuthProvider>
         <Layout>
           <Routes>
@@ -90,8 +105,20 @@ function App() {
                     pageTitle="Find Best Tour Packages"
                     pathName="Packages"
                   />
-                  <TopDestinations />
-                  <TourPackages />
+                  <TourPackages singlePage />
+                  <Counter />
+                </>
+              }
+            />
+            <Route
+              path="/destination"
+              element={
+                <>
+                  <Hero
+                    pageTitle="Top Destinations"
+                    pathName="Top Destinations"
+                  />
+                  <TopDestinations singlePage />
                   <Counter />
                 </>
               }
