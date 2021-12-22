@@ -6,6 +6,7 @@ import Banner from "./components/Banner";
 import ClientsSay from "./components/ClientsSay";
 import Contact from "./components/Contact";
 import Counter from "./components/Counter";
+import Dashboard from "./components/Dashboard";
 import Hero from "./components/Hero";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
@@ -50,6 +51,15 @@ function App() {
                 <>
                   <Hero pageTitle="Create New Account" pathName="Create New" />
                   <SignUp />
+                </>
+              }
+            />
+            <Route
+              path="/dashboard"
+              element={
+                <>
+                  <Hero pageTitle="Dashboard" pathName="Dashboard" />
+                  <Dashboard />
                 </>
               }
             />

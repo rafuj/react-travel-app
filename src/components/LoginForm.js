@@ -36,6 +36,7 @@ export default function LoginForm() {
           <Input
             className={`${classes.formControl} form-control border`}
             type="email"
+            name="email"
             label="Your Email Address"
             value={email}
             required
@@ -49,6 +50,7 @@ export default function LoginForm() {
             className={`${classes.formControl} form-control border`}
             type="password"
             label="Password"
+            name="password"
             value={password}
             required
             onChange={(e) => setPassword(e.target.value)}

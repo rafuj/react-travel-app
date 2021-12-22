@@ -1,0 +1,92 @@
+.cmnTable {
+  color: #555555;
+  text-align: center;
+}
+
+.cmnTable thead {
+  background: #e5e5e5;
+}
+
+.cmnTable thead th {
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  border: none;
+  color: #fff;
+  padding: 1.1rem 0.5rem 0.93rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-left: 1px solid #e5e5e5;
+}
+
+.cmnTable thead th:not(:last-child) {
+  border-right: 1px solid #e5e5e5 !important;
+}
+
+.cmnTable .thumb img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.cmnTable tbody {
+  font-size: 14px;
+  border-top: none !important;
+}
+
+.cmnTable tbody tr td {
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+  padding: 12px;
+}
+
+.cmnTable tbody tr:nth-of-type(even) {
+  background: rgba(255, 255, 255, 0.031);
+}
+
+@media (max-width: 1199px) {
+  .cmnTable thead {
+    display: none;
+  }
+
+  .cmnTable tbody tr {
+    display: block;
+  }
+
+  .cmnTable tbody tr td {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+
+  .cmnTable tbody tr td::before {
+    font-weight: 700;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    text-align: left;
+    content: attr(data-label);
+  }
+
+  .cmnTable tbody tr:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .cmnTable tbody tr:nth-of-type(odd) {
+    background: rgba(255, 255, 255, 0.051);
+  }
+}
+
+@media (min-width: 1200px) {
+  .cmnTable .details {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.cmnTable .badge {
+  padding: 6px 10px 4px;
+  min-width: 65px;
+  font-weight: 600;
+  font-family: "Jost", sans-serif;
+}

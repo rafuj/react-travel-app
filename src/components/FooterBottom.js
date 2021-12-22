@@ -1,5 +1,5 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
+import { IoPaperPlaneOutline } from "react-icons/io5";
 import image from "../assets/images/payment.png";
 import classes from "../styles/Footer.module.css";
 import Button from "./Button";
@@ -36,7 +36,7 @@ export default function FooterBottom() {
                   required=""
                 />
                 <Button button type="submit">
-                  <BsSearch />
+                  <IoPaperPlaneOutline />
                 </Button>
               </div>
             </form>

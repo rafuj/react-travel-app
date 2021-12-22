@@ -38,8 +38,6 @@ export default function ContactForm() {
         setInterval(() => {
           setSuccess(false);
         }, 2000);
-      } else {
-        alert("Please Fill the Data");
       }
       setName("");
       setEmail("");

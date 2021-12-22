@@ -31,6 +31,7 @@ export default function BannerForm() {
   const handleChange = (e) => {
     e.preventDefault();
     !currentUser && navigate("/registration");
+
     if (selectDest !== "default" && startDate && endDate && guest) {
       const res = fetch(
         "https://travel-app-98c90-default-rtdb.asia-southeast1.firebasedatabase.app/touristRequest.json",

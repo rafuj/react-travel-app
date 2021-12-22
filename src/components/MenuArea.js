@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { BiUserPin } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import classes from "../styles/Menu.module.css";
 import LanguageArea from "./LanguageArea";
@@ -26,15 +26,28 @@ export default function MenuArea() {
         </div>
         <ul className={classes.menu}>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={(navInfo) => (navInfo.isActive ? classes.active : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="/clients">Clients</Link>
+            <NavLink
+              to="/clients"
+              className={(navInfo) => (navInfo.isActive ? classes.active : "")}
+            >
+              Clients
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className="active">
+            <NavLink
+              to="/contact"
+              className={(navInfo) => (navInfo.isActive ? classes.active : "")}
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <div

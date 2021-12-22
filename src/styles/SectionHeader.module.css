@@ -24,6 +24,9 @@ import image from .section__header {
   -webkit-mask-position: center center;
   margin: 0 auto;
 }
+.section__header {
+  margin-bottom: 25px;
+}
 
 @media (min-width: 768px) {
   .section__header {
