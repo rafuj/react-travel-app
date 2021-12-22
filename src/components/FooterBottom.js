@@ -1,10 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoPaperPlaneOutline } from "react-icons/io5";
+import validator from "validator";
 import image from "../assets/images/payment.png";
 import classes from "../styles/Footer.module.css";
 import Button from "./Button";
+import Input from "./Input";
 import SocialIcons from "./SocialIcons";
 export default function FooterBottom() {
+  const [checkedMail, setCheckedMail] = useState(true);
+  const [success, setSuccess] = useState(false);
+  const [email, setEmail] = useState(null);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (email === null) {
+      return false;
+    }
+    if (validator.isEmail(email)) {
+      setCheckedMail(true);
+      const fetchNewsletter = async (e) => {
+        const res = fetch(
+          "https://travel-app-98c90-default-rtdb.asia-southeast1.firebasedatabase.app/subscribers.json",
+          {
+            method: "POST",
+            headers: { "content-Type": "application/json" },
+            body: JSON.stringify({
+              email,
+            }),
+          }
+        );
+        if (res) {
+          setSuccess(true);
+          setInterval(() => {
+            setSuccess(false);
+          }, 2000);
+        }
+        setEmail("");
+      };
+      fetchNewsletter();
+    } else {
+      setCheckedMail(false);
+    }
+  };
+
   return (
     <div className="container">
       <div className={classes.footer__bottom}>
@@ -27,19 +65,29 @@ export default function FooterBottom() {
           <div className={classes.footer__bottom__widget}>
             <h6 className={classes.title}>Subscribe Newsletter</h6>
             <p className="mb-4">Subscribe for new Offers and updates</p>
-            <form className={classes.newletter__form}>
+            {success && (
+              <div className="alert alert-success" role="alert">
+                Thank you for subscribe us
+              </div>
+            )}
+            <form className={classes.newletter__form} onSubmit={handleClick}>
               <div className="input-group">
-                <input
+                <Input
                   type="text"
-                  className={`${classes.form__control} form-control`}
+                  name="email"
+                  value={email}
                   placeholder="Enter Your Email"
-                  required=""
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                  className={`${classes.form__control} form-control`}
                 />
                 <Button button type="submit">
                   <IoPaperPlaneOutline />
                 </Button>
               </div>
             </form>
+            {!checkedMail && <div>This is Invalid Email</div>}
           </div>
           <div className={classes.footer__bottom__widget}>
             <h6 className={classes.title}>Connect with</h6>
