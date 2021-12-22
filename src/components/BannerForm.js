@@ -3,7 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import useDestination from "../hooks/useDestination";
+import useTourRequestDestination from "../hooks/useTourRequestDestination";
 import classes from "../styles/Banner.module.css";
 import Button from "./Button";
 import Input from "./Input";
@@ -16,7 +16,7 @@ export default function BannerForm() {
   const [success, setSuccess] = useState(false);
   const [selectState, setSelectState] = useState(false);
 
-  const { loading, error, dest } = useDestination();
+  const { loading, error, dest } = useTourRequestDestination();
   const { currentUser } = useAuth();
 
   const navigate = useNavigate();

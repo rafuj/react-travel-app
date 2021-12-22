@@ -54,7 +54,7 @@ export default function Destination({ singlePage }) {
               next={() =>
                 setTimeout(() => {
                   setPage(page + 9);
-                }, 500)
+                }, 200)
               }
               key={`${item.id}`}
             >

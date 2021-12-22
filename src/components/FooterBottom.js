@@ -9,12 +9,12 @@ import SocialIcons from "./SocialIcons";
 export default function FooterBottom() {
   const [checkedMail, setCheckedMail] = useState(true);
   const [success, setSuccess] = useState(false);
-  const [email, setEmail] = useState(null);
+  const [email, setEmail] = useState("");
 
   const handleClick = (e) => {
     e.preventDefault();
-    if (email === null) {
-      return false;
+    if (email === "") {
+      return true;
     }
     if (validator.isEmail(email)) {
       setCheckedMail(true);

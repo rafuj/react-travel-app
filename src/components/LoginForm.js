@@ -25,7 +25,10 @@ export default function LoginForm() {
     } catch (err) {
       console.log(err);
       setLoading(false);
-      setError("Failed to create an account");
+      setError("Credentials dosen't match");
+      setTimeout(() => {
+        setError(false);
+      }, 2000);
     }
   }
 
